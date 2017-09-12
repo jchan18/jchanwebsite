@@ -1,0 +1,187 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  /*padding-top: 15%;
+  padding-bottom: 15%;*/
+  text-align: center;
+  font-size: 50px;
+  margin: 0px;
+  /*font-style: italic;*/
+}
+
+.headshot {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+#header {
+  padding-top: 10%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+#description {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+h2, #rlink {
+  font-size: 20px;
+}
+
+h3 {
+  margin:0px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 5px;
+}
+
+p, ul, .links {
+  color: #656668;
+  opacity: 0.9;
+}
+/*FIX VIEW MY RESUME HOVER*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+.information {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap; /*wrap*/
+  margin-bottom: 10%;
+}
+
+#about, #skills, #contact, #resume {
+  /*display: inline-block;*/
+  text-align: center;
+  padding: 4%;
+  padding-top: 0px;
+}
+
+.links {
+  display: block !important;
+  justify-content: center;
+}
+
+.menu {
+  width: 15em;
+  max-height: 30%;
+  text-align: center;
+}
+
+.dropdown {
+  text-align: left;
+  /*position: fixed;*/
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 215px;
+  height: 130px;
+  /*font-style: italic;*/
+  letter-spacing: 0.5px;
+  overflow-y: scroll;
+}
+
+.button {
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+  margin:0px;
+  color: black;
+  border: 1px solid #adadad;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 1px 1px #eaecef;
+  cursor: pointer;
+}
+
+.button:hover, #resbtn:hover {
+  font-style: italic;
+  background-color: black;
+  color: white;
+}
+
+img {
+  padding: 5px;
+  text-align: center;
+}
+/*
+#gh_logo {
+  padding-top: 10px;
+}
+#mail_logo {
+  width: 32px;
+}
+*/
+
+/* logos in the contact box
+#li_logo {
+  margin-top: 16px;
+  margin-left: -20px;
+  margin-right: 30px;
+}
+
+#gh_logo {
+  margin-right: 30px;
+}
+
+#mail_logo {
+  margin-bottom: 3px;
+}*/
+
+.logos {
+  justify-content: space-between;
+}
+
+#li_logo {
+  margin-top: 5px;
+  margin-right: 50px;
+  /*margin-left: 4px;
+  margin-right: 50px;*/
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .information {
+    flex-wrap: wrap;
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media only screen and (max-width: 480px), (orientation: portrait){
+  #description {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: center;
+  }
+  .information{
+    flex-wrap: wrap;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    justify-content: center;
+  }
+
+/*  h1 {
+    font-size: 80px;
+  }*/
+  h2 {
+    font-size: ;
+  }
+}
