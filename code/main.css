@@ -1,3 +1,8 @@
+* {
+  text-align: center;
+}
+
+/*overhead*/
 html {
   overflow-y: scroll;
 }
@@ -29,13 +34,16 @@ h3 {
   font-size: 30px;
   padding-bottom: 2%;
 }
+
 header {
   width: 100%;
   text-align: left;
   background-color: black;
   height: 50px;
 }
+/*overhead end*/
 
+/*main section */
 .links {
   display: inline-block !important;
   justify-content: space-between;
@@ -43,28 +51,6 @@ header {
 
 .links a {
   text-decoration: none;
-}
-
-.headshot {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 25px;
-}
-
-#intro {
-  padding-top: 10%;
-  padding-bottom: 5%;
-  text-align: center;
-}
-
-#description {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-img {
-  padding: 5px;
-  text-align: center;
 }
 
 .logos {
@@ -78,20 +64,52 @@ img {
   margin-right: 50px;
 }
 
-.main {
-  padding: 5%;
-  width: 100%;
-  min-height: 100%;
-  box-sizing: border-box;
+.headshot {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 25px;
 }
 
-.hoverbutton {
-  padding-top: 5%;
-  padding-bottom: 5%;
+#intro {
+  padding-top: 18%;
+  padding-bottom: 8%;
   text-align: center;
 }
 
-#downbutton, #upbutton {
+#description {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+img {
+  padding: 5px;
+  text-align: center;
+}
+
+.main, .bodysec {
+  text-align: center;
+  max-width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+/*main section end*/
+
+#aboutme, #skills {
+  padding-top: 5%;
+}
+
+#aboutme {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/*scroll buttons*/
+.hoverbutton {
+  padding-top: 2%;
+  text-align: center;
+}
+
+.downbutton, #upbutton {
   width: 35px;
   height: auto;
   opacity: 0.4;
@@ -101,7 +119,7 @@ img {
   transition: 0.3s ease-in-out;
 }
 
-#downbutton:hover {
+.downbutton:hover {
   cursor: pointer;
   transform: translateY(15px);
 }
@@ -110,16 +128,10 @@ img {
   cursor: pointer;
   transform: translateY(-15px);
 }
+/*end of scroll buttons*/
 
 #aboutme {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-#aboutme, #skills  {
   text-align: center;
-  padding-top: 5%;
-  padding-bottom: 14%;
 }
 
 #contactme {
@@ -161,6 +173,7 @@ img {
   margin-right: 10%;
 }
 
+/*start of skillbar section*/
 .skillbar {
 	position:relative;
 	display:block;
@@ -187,7 +200,7 @@ img {
 	position:absolute;
 	top:0;
 	left:0;
-  font-family: "Roboto-Medium";
+  font-family: "Roboto-Medium", "Roboto";
 	font-size:13px;
 	color:#000;
 }
@@ -220,7 +233,9 @@ img {
 	color:#ffffff;
 	color:rgba(0, 0, 0, 0.4);
 }
+/*end of skill bar section*/
 
+/*background color of aboutme and contactme section*/
 #aboutme, #contactme{
   background-color: #36454f;
   color: white;
@@ -268,10 +283,6 @@ footer {
   text-align: center;
 }
 
-.bleft {
-  margin-left: 35%;
-}
-
 /*mobile optimization*/
 @media only screen and (max-width: 767px) {
   h1 {
@@ -293,13 +304,8 @@ footer {
     margin-top: 5%;
   }
 
-  .hoverbutton {
-    padding-top: 9%;
-  }
-
   #aboutmedesc, #music, #lang, #travel {
     width: 90%;
-    /*align-items: center;*/
     margin-right: auto;
     margin-left: auto;
   }
@@ -308,9 +314,13 @@ footer {
     padding: 5%;
   }
 
-  .contactbutton {
-    width: 220px;
+  .downbutton {
+    padding-bottom: 5%;
   }
+
+    #contact2 {
+      margin-bottom: 10%;
+    }
   .skillbar {
     align-items: center;
     width: 80%;
@@ -320,7 +330,6 @@ footer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
   #music, #lang, #travel {
     width: 60%;
     align-items: center;
@@ -332,12 +341,14 @@ footer {
     margin-right: auto;
     margin-left: auto;
   }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-@media only screen and (min-width: 1200px) {
+  #intro {
+    padding-top: 25%;
+  }
+  #abtdown {
+    padding-bottom: 5%;
+  }
+  #skillsdown {
+    padding-top: 5%;
+  }
 
 }
