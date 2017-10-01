@@ -175,63 +175,63 @@ img {
 
 /*start of skillbar section*/
 .skillbar {
-	position:relative;
-	display:block;
-	margin-bottom:15px;
-	width:100%;
-	background:#eee;
-	height:35px;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	-webkit-transition:0.4s linear;
-	-moz-transition:0.4s linear;
-	-ms-transition:0.4s linear;
-	-o-transition:0.4s linear;
-	transition:0.4s linear;
-	-webkit-transition-property:width, background-color;
-	-moz-transition-property:width, background-color;
-	-ms-transition-property:width, background-color;
-	-o-transition-property:width, background-color;
-	transition-property:width, background-color;
+  position:relative;
+  display:block;
+  margin-bottom:15px;
+  width:100%;
+  background:#eee;
+  height:35px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.4s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
 }
 
 .skillbar-title {
-	position:absolute;
-	top:0;
-	left:0;
+  position:absolute;
+  top:0;
+  left:0;
   font-family: "Roboto-Medium", "Roboto";
-	font-size:13px;
-	color:#000;
+  font-size:13px;
+  color:#000;
 }
 
 .skillbar-title span {
-	display: block;
-	padding:0 20px;
-	height:35px;
-	line-height:35px;
-	border-top-left-radius:3px;
-	border-bottom-left-radius:3px;
+  display: block;
+  padding:0 20px;
+  height:35px;
+  line-height:35px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
 }
 
 .skillbar-bar {
-	height:35px;
-	width:0px;
-	background:#6adcfa;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
+  height:35px;
+  width:0px;
+  background:#6adcfa;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
 }
 
 .skill-bar-percent {
-	position:absolute;
-	right:10px;
-	top:0;
-	font-size:11px;
-	height:35px;
-	line-height:35px;
-	color:#ffffff;
-	color:rgba(0, 0, 0, 0.4);
+  position:absolute;
+  right:10px;
+  top:0;
+  font-size:11px;
+  height:35px;
+  line-height:35px;
+  color:#ffffff;
+  color:rgba(0, 0, 0, 0.4);
 }
 /*end of skill bar section*/
 
@@ -314,16 +314,20 @@ footer {
     padding: 5%;
   }
 
+  #contactme {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   .downbutton {
     padding-bottom: 5%;
   }
 
-    #contact2 {
-      margin-bottom: 10%;
-    }
+  #contact2 {
+    margin-bottom: 10%;
+  }
   .skillbar {
     align-items: center;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
