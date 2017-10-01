@@ -2,82 +2,159 @@
 <html>
 <head>
   <title>JChan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-  <script src="web2.js"></script>
-  <link href="web2.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400, 600" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+  <link href="main.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:200|Martel+Sans:200|Roboto:100" rel="stylesheet">
 </head>
 
 <body>
-  <div id="header">
-    <img class="headshot" src="image1.jpeg" alt="">
-    <h1>Jennifer Chan</h1>
-    <p id="description">
-      I am a second year student at the University of Waterloo
-      studying in the Computing and Financial Management program.
-      <br>
-      Web Developer | Avid Language Learner | Programmer
-    </p>
-    <div class="links">
-      <a href="https://www.linkedin.com/in/jenniferrxchan/" target="_blank">
-        <img src="In-2C-101px-R-32px.png" class="logos" id="li_logo" title="LinkedIn">
-      </a>
-      <a href="https://www.github.com/jchan18" target="_blank">
-        <img src="GitHub-Mark-32px.png" class="logos" id="gh_logo" title="Github">
-      </a>
-      <!--<a href="mailto:jenniferrxchan@gmail.com" target="_blank">
-        <img src="email.png" id="mail_logo" title="Email me">
-      </a>-->
-    </div>
-  </div>
-
-  <!--About Me-->
-  <div class="information">
-    <div class="menu" class="onecol" class="twocol
-    "class="fourcol" id="about">
-      <h2 class="button">""</h2>
-      <p class="dropdown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti aut maiores eveniet rerum quis porro iure quas voluptatum consequuntur dolorem optio magnam culpa voluptates, et rem repellendus fugiat maxime, id.</p>
-    </div>
-
-    <!--Skills-->
-    <div class="menu" class="twocol" class="fourcol" id="skills">
-      <h2 class="button">Skills</h2>
-      <ul class="dropdown" style="list-style: none">
-        <h3>Computer</h3>
-          <li>C</li>
-          <li>Racket</li>
-          <li>Python</li>
-          <li>Photoshop</li>
-          <li>Javascript</li>
-          <li>HTML &amp; CSS</li>
-        <h3 style="margin-top: 16px">Languages</h3>
-          <li>English</li>
-          <li>Mandarin</li>
-          <li>Cantonese</li>
-          <li>Korean</li>
-
-      </ul>
-    </div>
-
-    <!--Contact-->
-    <div class="menu" class="onecol" class="twocol" class="fourcol" id="contact">
-      <h2 class="button">Contact</h2>
-      <p class="dropdown">
-        Email: <br>jenniferrxchan@gmail.com
-        <br><br>
-        Phone: <br>(647)-708-8524
+  <section class="main" id="maindest">
+    <div id="intro">
+      <img class="headshot" src="image1.jpg" alt="">
+      <h1>Jennifer Chan</h1>
+      <p id="description" style="letter-spacing: 1px">
+        I am a second year student at the University of Waterloo
+        studying in the Computing and Financial Management program.
+        <br>
+        Web Developer | Avid Language Learner | Programmer
       </p>
-
+      <div class="links">
+        <a href="https://www.linkedin.com/in/jenniferrxchan/" target="_blank">
+          <img src="In-2C-101px-R-32px.png" class="logos" id="li_logo" title="LinkedIn">
+        </a>
+        <a href="https://www.github.com/jchan18" target="_blank">
+          <img src="GitHub-Mark-32px.png" class="logos" id="gh_logo" title="Github">
+        </a>
+      </div>
     </div>
 
-    <!--Resume-->
-    <div class="menu" id="resume">
-      <h2 class="button">
-        <a id="resbtn" href="JenniferChan.pdf" target="_blank">
-          View my resume
-        </a>
-      </h2>
+    <div class="hoverbutton">
+      <a href="#aboutme">
+        <img id="downbutton" src="arrow.png" alt="">
+      </a>
+    </div>
+  </section>
+
+  <section class="panel" id="aboutme">
+    <h2 style="padding-top: 1%;padding-bottom: 1%">More About Me</h2>
+    <p id="aboutmedesc">
+      My name is Jennifer. I am an aspiring developer and programmer with a passion to learn as much as I can about the world of coding.
+      I am particularly interested in solving problems, web development and learning new languages.
+      When I have spare time, I especially enjoy learning new coding languages using online tutorials.
+    </p>
+
+    <section class="otherinterests">
+      <h3>Other Interests</h3>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4" id="music">
+            <img src="27130.png" alt="">
+            <p>
+              I have been involved with music since I was a kid.
+              Throughout the years, I learned how to play a number of instruments:
+              piano, violin, flute, drums and guitar. I also enjoy listening to K-Pop.
+            </p>
+          </div>
+          <div class="col-md-4" id="lang">
+            <img src="language1600.png" alt="">
+            <p>
+              When I was young, I learned English in school and picked up Chinese and Cantonese
+              through conversations with my parents. Now I have been learning Korean by myself
+              for four years.
+            </p>
+          </div>
+          <div class="col-md-4" id="travel">
+            <img src="15537-200.png" alt="">
+            <p>
+              Up to this point in my life, I have travelled to USA, Mexico, the Maritimes,
+              Hong Kong, Taiwan, South Korea and Japan. I still haven't been to Europe, but
+              I am planning to go as soon as I retire.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="hoverbutton">
+      <a href="#skills">
+        <img id="downbutton" src="arrow.png" alt="">
+      </a>
+    </div>
+  </section>
+
+  <!-- <section id="skillsres"> -->
+  <div class="panel" id="skills">
+    <h2 style="padding-top: 1%; padding-bottom: 3%">Skills</h2>
+    <div class="skillbar clearfix " data-percent="40%">
+      <div class="skillbar-title"><span>HTML5 &amp; CSS3</span></div>
+      <div class="skillbar-bar" style="background: rgb(77,162,181)"></div>
+      <div class="skill-bar-percent">40%</div>
+    </div> <!-- End Skill Bar -->
+
+    <div class="skillbar clearfix " data-percent="10%">
+      <div class="skillbar-title"><span>Javascript &amp; jQuery</span></div>
+      <div class="skillbar-bar" style="background: rgb(73,154,181);"></div>
+      <div class="skill-bar-percent">10%</div>
+    </div> <!-- End Skill Bar -->
+
+    <div class="skillbar clearfix " data-percent="50%">
+      <div class="skillbar-title"><span>Racket</span></div>
+      <div class="skillbar-bar" style="background: rgb(69,146,180);"></div>
+      <div class="skill-bar-percent">50%</div>
+    </div> <!-- End Skill Bar -->
+
+    <div class="skillbar clearfix " data-percent="50%">
+      <div class="skillbar-title"><span>C</span></div>
+      <div class="skillbar-bar" style="background: rgb(66,139,180);"></div>
+      <div class="skill-bar-percent">50%</div>
+    </div> <!-- End Skill Bar -->
+
+    <div class="skillbar clearfix " data-percent="5%">
+      <div class="skillbar-title"><span>Bash</span></div>
+      <div class="skillbar-bar" style="background: rgb(62,131,179)"></div>
+      <div class="skill-bar-percent">5%</div>
+    </div> <!-- End Skill Bar -->
+
+    <div class="skillbar clearfix " data-percent="55%">
+      <div class="skillbar-title"><span>Photoshop</span></div>
+      <div class="skillbar-bar" style="background: rgb(59,125,173)"></div>
+      <div class="skill-bar-percent">55%</div>
+    </div> <!-- End Skill Bar -->
+
+    <div class="skillbar clearfix " data-percent="20%">
+      <div class="skillbar-title"><span>Python</span></div>
+      <div class="skillbar-bar" style="background: rgb(46,110,160);"></div>
+      <div class="skill-bar-percent">20%</div>
+    </div> <!-- End Skill Bar -->
+    <!-- </section> -->
+    <a style="margin-top: 5%"class="bttn" id="resume" href="JenniferChan.pdf" target="_blank">View my resume</a>
+    <div class="hoverbutton">
+      <a href="#contactme">
+        <img id="downbutton" src="arrow.png" alt="">
+      </a>
     </div>
   </div>
+
+  <section class="panel" id="contactme">
+    <h2>Contact me</h2>
+    <p>I am always searching for new opportunities to learn more and expand my skillset.</p>
+    <br>
+    <a class="bttn" id="contact1" href="mailto:jenniferrxchan@gmail.com" target="_top">Send me a message</a>
+    <br>
+    <a class="bttn" id="contact2" href="tel:6477088524">Call 647-708-8524</a>
+  </section>
+  <footer id="bottom">
+    <div id="hoverbutton">
+      <a style="height: 0px" href="#maindest">
+        <img id="upbutton" src="uparrow.png" alt="">
+        <br>
+        <a>Back to top</a>
+      </a>
+    </div>
+    <p style="font-size: 10px; letter-spacing: 1px; padding-top: 10px; margin-bottom:10px">® Jennifer Chan 2017</p>
+  </footer>
 </body>
 </html>
