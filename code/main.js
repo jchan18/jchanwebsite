@@ -1,6 +1,6 @@
+// load skill bars when scrolled to the skills section on page
 function loadBars() {
 	var skillsDiv = $('#skills');
-
 	$(window).on('scroll', function(){
 		var winT = $(window).scrollTop(),
 		winH = $(window).height(),
@@ -15,8 +15,8 @@ function loadBars() {
 	});
 }
 
+// enable smooth scrolling between sections
 function smoothscrolling() {
-	console.log('here');
 	$("a").on('click', function(event) {
 		if (this.hash !== "") {
 			event.preventDefault();
